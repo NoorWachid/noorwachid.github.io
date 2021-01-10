@@ -7,44 +7,62 @@
     <title>Noor Wachid | Portfolio</title>
     <link rel="stylesheet" href="vendor/bootstrap.min.css">
     <link rel="stylesheet" href="src/main.css">
+    <link rel="stylesheet" href="vendor/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&display=swap">
 </head>
 
 <body>
 
-    <section id="navbar" class="navbar container">
-        <div class="navbar-brand">Portfolio</div>
-        <div class="items">
-            <a href="#banner">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+    <section id="about" class="position-relative overflow-hidden p-3 p-md-5 text-center bg-dark text-light">
+        <div id="navbar" class="navbar container">
+            <a class="navbar-brand" href="https://github.com/noorwachid"><i class="icon-th-large"></i></a>
+            <div>
+                <a class="mx-1" href="#about">About</a>
+                <a class="mx-1" href="#skills">Skills</a>
+                <a class="mx-1" href="#projects">Projects</a>
+                <a class="mx-1" href="#contact">Contact</a>
+            </div>
         </div>
-    </section>
 
-    <section id="banner" class="position-relative overflow-hidden p-3 p-md-5 text-center bg-light">
         <div class="col-md-5 p-lg-5 mx-auto my-5">
             <h1 class="display-4 font-weight-normal">Noor Wachid</h1>
-            <p class="lead font-weight-normal">Programmer</p>
-            <a class="btn btn-outline-secondary" href="#">Down Icon</a>
+            <p class="lead font-weight-normal">C++ programmer and web developer</p>
         </div>
+        <a href="#skills"><i class="icon-angle-down icon-2x"></i></a>
         <div class="product-device shadow-sm d-none d-md-block"></div>
         <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
     </section>
 
-    <section id="about" class="container">
-        <h1>About</h1>
-        <div class="row">
-            <div class="col-6 bg-light">
-            </div>
-            <div class="col-6">
-                <h2>Hi There!</h2>
-            </div>
+    <section id="projects" class="container">
+        <h1 class="name">Projects</h1>
+        <div id="tags" class="d-flex flex-row justify-content-center mb-4">
+            <span class="mx-1 px-3 py-2 border">All</span>
+            <span class="mx-1 px-3 py-2 border">C++</span>
+            <span class="mx-1 px-3 py-2 border">JavaScript</span>
+            <span class="mx-1 px-3 py-2 border">PHP</span>
         </div>
+        <div id="list">
+            <div class="row">
+                <div class="col-md-4">
+                    <div>
+                        <img class="d-block mb-3"
+                            data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                            alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;"
+                            src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22348%22%20height%3D%22225%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20348%20225%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_176ebdea450%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A17pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_176ebdea450%22%3E%3Crect%20width%3D%22348%22%20height%3D%22225%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22116.68333435058594%22%20y%3D%22120.3%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+                            data-holder-rendered="true">
+                        <div>
+                            <h4>Project's Name</h4>
+                            <p>This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </section>
 
+
     <section id="skills" class="container">
-        <h1>Skills</h1>
+        <h1 class="name">Skills</h1>
         <h3>Main Skills</h3>
         <ul>
             <li>C++</li>
@@ -60,51 +78,33 @@
         </ul>
     </section>
 
-    <section id="projects" class="container">
-        <h1>Projects</h1>
-        <div id="tags" class="d-flex flex-row justify-content-center mb-4">
-            <span class="mx-1 px-3 py-2 border">All</span>
-            <span class="mx-1 px-3 py-2 border">C++</span>
-            <span class="mx-1 px-3 py-2 border">JavaScript</span>
-            <span class="mx-1 px-3 py-2 border">PHP</span>
-        </div>
-        <div id="list">
-            <div class="row">
-                <div class="col-md-4">
-                    <div>
-                        <img
-                            data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
-                            alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;"
-                            src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22348%22%20height%3D%22225%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20348%20225%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_176ebdea450%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A17pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_176ebdea450%22%3E%3Crect%20width%3D%22348%22%20height%3D%22225%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22116.68333435058594%22%20y%3D%22120.3%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
-                            data-holder-rendered="true">
-                        <div>
-                            <h4>Project's Name</h4>
-                            <p>This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <section id="contact" class="container">
-        <h1>Contact</h1>
+        <h1 class="name">Contact</h1>
         <div class="row">
-            <div class="col">
+            <a class="col" href="mailto://noorwachid@yandex.com">
                 <h3>E-Mail</h3>
-            </div>
-            <div class="col">
+                <p>noorwachid@yandex.com</p>
+            </a>
+            <a class="col" href="tel:+6289383900152">
                 <h3>Phone</h3>
-            </div>
+                <p>+62895383900152</p>
+            </a>
         </div>
 
-        <a href="http://facebook.com/noorwach">Facebook</a>
-        <a href="http://twitter.com/noorwach">Twitter</a>
-        <a href="http://github.com/noorwachid">Github</a>
     </section>
 
-    <section class="footer">
-        &copy; <span id="current-year">2020</span> Allright Reserved
+    <section class="bg-secondary text-light text-center py-5">
+        <div class="social">
+            <a class="px-3" href="http://facebook.com/noorwach"><i class="icon-facebook icon-3x"></i></a>
+            <a class="px-3" href="http://twitter.com/noorwach"><i class="icon-twitter icon-3x"></i></a>
+            <a class="px-3" href="http://github.com/noorwachid"><i class="icon-github icon-3x"></i></a>
+        </div>
+    </section>
+
+    <section class="footer bg-dark text-light py-5">
+        <div class="container">
+            &copy; <span id="current-year">0000</span> Allrights Reserved
+        </div>
     </section>
 
     <script src="vendor/jquery.min.js"></script>

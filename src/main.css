@@ -1,3 +1,21 @@
+body {
+    font-family: 'Open Sans';
+}
+
+body {
+    background-color: #fafafa;
+}
+
 #tags>span {
     border-radius: 3rem !important;
+}
+
+section>.name {
+    text-align: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+#img-face {
+    min-height: 20rem;
 }
