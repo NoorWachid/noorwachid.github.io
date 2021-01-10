@@ -75,4 +75,6 @@ $(document).ready(function () {
             projectTpl(it.name, it.description, it.tags.join(", "))
         );
     }
+
+    initSmoothScroll();
 });
