@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Noor Wachid | Portfolio</title>
+    <link rel="stylesheet" href="vendor/bootstrap.min.css">
 </head>
+
 <body>
 
-    <section class="navbar">
-        <div class="icon">Icon</div>
+    <section id="navbar" class="navbar container">
+        <div class="navbar-brand">Portfolio</div>
         <div class="items">
             <a href="#banner">Home</a>
             <a href="#about">About</a>
@@ -18,16 +21,21 @@
         </div>
     </section>
 
-    <section id="banner">
-        <h1>Noor Wachid</h1>
-        <p>Programmer</p>
+    <section id="banner" class="position-relative overflow-hidden p-3 p-md-5 text-center bg-light">
+        <div class="col-md-5 p-lg-5 mx-auto my-5">
+            <h1 class="display-4 font-weight-normal">Noor Wachid</h1>
+            <p class="lead font-weight-normal">Programmer</p>
+            <a class="btn btn-outline-secondary" href="#">Down Icon</a>
+        </div>
+        <div class="product-device shadow-sm d-none d-md-block"></div>
+        <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
     </section>
 
-    <section id="about">
+    <section id="about" class="container">
         <h2>Hi There!</h2>
     </section>
 
-    <section class="skills">
+    <section id="skills" class="container">
         <ul>
             <li>C++</li>
             <li>JavaScript</li>
@@ -35,7 +43,7 @@
         </ul>
     </section>
 
-    <section id="projects">
+    <section id="projects" class="container">
         <div id="tags">
             <span>C++</span>
             <span>JavaScript</span>
@@ -57,7 +65,7 @@
         </div>
     </section>
 
-    <section class="contact">
+    <section class="contact" class="container">
         <a href="http://facebook.com/noorwach">Facebook</a>
         <a href="http://twitter.com/noorwach">Twitter</a>
         <a href="http://github.com/noorwachid">Github</a>
@@ -67,4 +75,5 @@
         &copy; 2021 Allright Reserved
     </section>
 </body>
+
 </html>
