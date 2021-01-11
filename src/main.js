@@ -1,4 +1,4 @@
-let data = data_EN;
+let data = dataId;
 
 function createProjectNodeTag(id, name) {
     return `<span id="${id}" class="item mx-1 px-3 py-2 border">${name}</span>`;
@@ -83,6 +83,7 @@ function initUiLanguage() {
     $("#dev-email").text(data.dev.email);
     $("#dev-phone").text(data.dev.phone);
     $("#ui-cv").text(data.ui.cv);
+    $("#ui-cv-url").attr("href", data.ui.cvUrl);
     $("#ui-projects-h").text(data.ui.projects);
     $("#ui-projects").text(data.ui.projects);
     $("#ui-skills-h").text(data.ui.skills);

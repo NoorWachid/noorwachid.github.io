@@ -1,43 +1,43 @@
-const dataEn = {
+const dataId = {
     ui: {
         cv: "CV",
-        cvUrl: "cv.svg",
-        projects: "Projects",
-        skills: "Skills",
-        mainSkills: "Main Skills",
-        otherSkills: "Other Skills",
-        contact: "Contact",
-        email: "E-Mail",
-        phone: "Phone",
-        copyright: "All Rights Reserved",
+        cvUrl: "cv_BahasaIndonesia.svg",
+        projects: "Proyek",
+        skills: "Kemampuan",
+        mainSkills: "Kemampuan Utama",
+        otherSkills: "Kemampuan Lainnya",
+        contact: "Kontak",
+        email: "Surel",
+        phone: "Telpon",
+        copyright: "Hak Cipta Dilindugi",
     },
 
     dev: {
         name: "Noor Wachid",
-        description: "C++ Programmer and Web Developer",
+        description: "C++ Programmer dan Web Developer",
         phone: '+62895383900152',
         email: 'noorwachid@yandex.com',
 
         mainSkills: [{
                 name: "C++",
-                description: "Create high-performance library, CLI and graphics based application",
+                description: "Membuat library, aplikasi CLI dan grafik berperforma tinggi",
             },
             {
                 name: "JavaScript",
-                description: "Make interactive web user interface",
+                description: "Membuat tampilan pengguna yang interaktif",
             },
             {
                 name: "PHP",
-                description: "Make dynamic website",
+                description: "Membuat website dinamis",
             }
         ],
 
         otherSkills: [
             "HTML/CSS",
             "MySQL",
-            "Using Git version control",
-            "Using GNU/Linux based OS",
-            "Speaking/Writing in Indonesian and English",
+            "Menggunakan Git version control",
+            "Menggunakan GNU/Linux based OS",
+            "Berbicara/Menulis dalam bahasa Indonesia dan Inggris",
         ],
     },
 
@@ -46,7 +46,7 @@ const dataEn = {
     projects: [{
             id: 1,
             name: "RainType",
-            description: "Very basic typing test written in JavaScript",
+            description: "Test mengetik dibuat dengan JavaScript",
             url: "https://noorwachid.github.io/RainType",
             image: "raintype.png",
             tags: ["JavaScript"]
@@ -54,7 +54,7 @@ const dataEn = {
         {
             id: 2,
             name: "WFileServer",
-            description: "Complete rewrite simplified version of HFS",
+            description: "Penulisan ulang HFS, lebih sederhana dan cepat",
             url: "https://github.com/NoorWachid/WFileServer",
             image: "wfs.png",
             tags: ["JavaScript", "NodeJS"]
@@ -62,7 +62,7 @@ const dataEn = {
         {
             id: 3,
             name: "FixQuote",
-            description: "Equalize/Differentiate quotation marks",
+            description: "Menyamakan/membedakan tanda petik",
             url: "https://noorwachid.github.io/Jar/FixQuote",
             image: "fixquote.png",
             tags: ["JavaScript"]
@@ -70,7 +70,7 @@ const dataEn = {
         {
             id: 4,
             name: "Sprint",
-            description: "Speed reader: Read article or anything faster than ever",
+            description: "Baca artikel atau apapun lebih cepat",
             url: "https://noorwachid.github.io/Jar/Sprint",
             image: "sprint.png",
             tags: ["JavaScript"]
@@ -78,7 +78,7 @@ const dataEn = {
         {
             id: 5,
             name: "AnggurEngine",
-            description: "Another 2D C++ Game Engine",
+            description: "2D Game engine",
             url: "https://github.com/NoorWachid/Anggur",
             image: "anggur.png",
             tags: ["C++"]
@@ -86,7 +86,7 @@ const dataEn = {
         {
             id: 5,
             name: "SimpleBlog",
-            description: "Super simple blog written in PHP with MySQL",
+            description: "Blog super sederhana",
             url: "https://github.com/NoorWachid/SimpleBlog",
             image: "blank.png",
             tags: ["PHP", "MySQL"]
