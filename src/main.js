@@ -58,8 +58,8 @@ function createProjectNode(it) {
                 data-holder-rendered="true">
             <div>
                 <h4>${it.name}</h4>
-                <p>${it.description}</p>
-                <div>${it.tags.join(", ")}</div>
+                <div class="text-secondary mb-1">${it.description}</div>
+                <div class="text-primary">${it.tags.join(", ")}</div>
             </div>
         </a>
     `
