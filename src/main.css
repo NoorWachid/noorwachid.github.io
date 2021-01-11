@@ -66,3 +66,7 @@ section>.name {
         border-right-width: 0px !important;
     }
 }
+@media (max-width: 349.98px) {
+    .w-sm-100 {
+        width: 100%;
+}
