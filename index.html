@@ -14,35 +14,35 @@
 
 <body>
 
-    <section id="about" class="position-relative overflow-hidden p-3 p-md-5 text-center bg-dark text-light mb-2">
+    <section id="banner" class="position-relative overflow-hidden p-3 p-md-5 text-center bg-dark text-light mb-2">
         <div id="navbar" class="navbar container">
             <a class="navbar-brand w-sm-100" href="https://github.com/noorwachid"><i class="icon-th-large"></i></a>
             <div>
-                <a class="mx-1" href="#about">About</a>
-                <a class="mx-1" href="#projects">Projects</a>
-                <a class="mx-1" href="#skills">Skills</a>
-                <a class="mx-1" href="#contact">Contact</a>
+                <a class="mx-1" href="cv.svg"><span id="ui-cv"></span></a>
+                <a class="mx-1" href="#projects"><span id="ui-projects"></span></a>
+                <a class="mx-1" href="#skills"><span id="ui-skills"></span></a>
+                <a class="mx-1" href="#contact"><span id="ui-contact"></span></a>
             </div>
         </div>
 
         <div class="col-md-5 p-lg-5 mx-auto my-5">
-            <h1 class="display-4 font-weight-normal">Noor Wachid</h1>
-            <p class="lead font-weight-normal">C++ Programmer and Web Developer</p>
+            <h1 class="display-4 font-weight-normal"><span id="dev-name"></span></h1>
+            <p class="lead font-weight-normal"><span id="dev-description"></span></p>
         </div>
         <a href="#projects"><i class="icon-angle-down icon-2x"></i></a>
     </section>
 
     <section id="projects" class="container mb-2">
-        <h1 class="name">Projects</h1>
+        <h1 class="name"><span id="ui-projects-h"></span></h1>
         <div id="tags" class="d-flex flex-row justify-content-center mb-4"></div>
         <div id="list" class="row text-center"></div>
     </section>
 
     <section id="skills" class="container mb-2">
-        <h1 class="name">Skills</h1>
+        <h1 class="name"><span id="ui-skills-h"></span></h1>
         <div class="row">
             <div class="col-md text-left text-md-right border-right">
-                <h3>Main Skills</h3>
+                <h3><span id="ui-main-skills"></span></h3>
                 <div>
                     <h5 class="mb-0">C++</h5>
                     <p class="text-secondary">Create high-performance library, CLI and graphics based application</p>
@@ -57,7 +57,7 @@
                 </div>
             </div>
             <div class="col-md">
-                <h3>Other Skills</h3>
+                <h3><span id="ui-other-skills"></span></h3>
                 <p>HTML/CSS</p>
                 <p>MySQL</p>
                 <p>Using Git version control</p>
@@ -68,14 +68,14 @@
     </section>
 
     <section id="contact" class="container mb-2">
-        <h1 class="name">Contact</h1>
+        <h1 class="name"><span id="ui-contact-h"></span></h1>
         <div class="row my-md-4">
             <div class="col-md-6 text-md-right border-right">
-                <h3>E-Mail</h3>
+                <h3><span id="ui-email"></span></h3>
                 <a href="mailto://noorwachid@yandex.com">noorwachid@yandex.com</a>
             </div>
             <div class="col-md-6 text-md-left" href="">
-                <h3>Phone</h3>
+                <h3><span id="ui-phone"></span></h3>
                 <a href="tel:+6289383900152">+62895383900152</a>
             </div>
         </div>
@@ -89,7 +89,7 @@
 
     <section class="footer text-center border-top py-5">
         <div class="container">
-            &copy; <span id="current-year">0000</span> All Rights Reserved
+            &copy; <span id="current-year"></span> <span id="ui-copyright"></span>
         </div>
     </section>
 

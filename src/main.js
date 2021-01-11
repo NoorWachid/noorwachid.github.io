@@ -1,4 +1,46 @@
-const data = {
+const data_EN = {
+    ui: {
+        cv: "CV",
+        cvUrl: "cv.svg",
+        projects: "Projects",
+        skills: "Skills",
+        mainSkills: "Main Skills",
+        otherSkills: "Other Skills",
+        contact: "Contact",
+        email: "E-Mail",
+        phone: "Phone",
+        copyright: "All Rights Reserved",
+    },
+
+    dev: {
+        name: "Noor Wachid",
+        description: "C++ Programmer and Web Developer",
+        phone: '+62895383900152',
+        email: 'noorwachid@yandex.com',
+
+        mainSkills: [{
+                name: "C++",
+                description: "Create high-performance library, CLI and graphics based application",
+            },
+            {
+                name: "JavaScript",
+                description: "Make interactive web user interface",
+            },
+            {
+                name: "PHP",
+                description: "Make dynamic website",
+            }
+        ],
+
+        otherSkills: [
+            "HTML/CSS",
+            "MySQL",
+            "Using Git version control",
+            "Using GNU/Linux based OS",
+            "Speaking/Writing in Indonesian and English",
+        ],
+    },
+
     tags: ["All", "C++", "JavaScript", "PHP"],
     tagActive: "All",
     projects: [{
@@ -52,6 +94,8 @@ const data = {
     ]
 };
 
+let data = data_EN;
+
 function createProjectNodeTag(id, name) {
     return `<span id="${id}" class="item mx-1 px-3 py-2 border">${name}</span>`;
 }
@@ -77,7 +121,7 @@ function initProjectTagList() {
     for (let i = 0; i < data.tags.length; ++i) {
         const id = `tag-${i}`;
         container.append(createProjectNodeTag(id, data.tags[i]));
-        $(`#${id}`).click(function() {
+        $(`#${id}`).click(function () {
             data.tagActive = data.tags[i];
             updateProjectTagList();
             updateProjectList();
@@ -85,7 +129,7 @@ function initProjectTagList() {
     }
 }
 
-function updateProjectTagList() { 
+function updateProjectTagList() {
 
     for (let i = 0; i < data.tags.length; ++i) {
         const element = $(`#tag-${i}`);
@@ -118,7 +162,7 @@ function updateProjectList() {
         $('<div class="col-md-4">'),
         $('<div class="col-md-4">'),
     ];
-    
+
     $("#list").text("");
     $("#list").append(projectCols[0]);
     $("#list").append(projectCols[1]);
@@ -129,10 +173,27 @@ function updateProjectList() {
     }
 }
 
+function initUiLanguage() {
+    $("#dev-name").text(data.dev.name);
+    $("#dev-description").text(data.dev.description);
+    $("#ui-cv").text(data.ui.cv);
+    $("#ui-projects-h").text(data.ui.projects);
+    $("#ui-projects").text(data.ui.projects);
+    $("#ui-skills-h").text(data.ui.skills);
+    $("#ui-skills").text(data.ui.skills);
+    $("#ui-main-skills").text(data.ui.mainSkills);
+    $("#ui-other-skills").text(data.ui.otherSkills);
+    $("#ui-contact").text(data.ui.contact);
+    $("#ui-contact-h").text(data.ui.contact);
+    $("#ui-email").text(data.ui.email);
+    $("#ui-phone").text(data.ui.phone);
+    $("#ui-copyright").text(data.ui.copyright);
+}
+
 $(document).ready(function () {
     $("#current-year").text(new Date().getFullYear());
 
-
+    initUiLanguage();
     initSmoothScroll();
     initProjectTagList();
     updateProjectTagList();
