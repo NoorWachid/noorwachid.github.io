@@ -2,6 +2,10 @@ body {
     font-family: 'Open Sans';
 }
 
+a {
+    color: inherit !important;
+}
+
 #tags>span {
     border-radius: 3rem !important;
 }
@@ -19,4 +23,9 @@ section>.name {
 
 .project {
     margin-bottom: 30px;
+}
+
+#tags>.item.active {
+    color: rgb(116, 38, 206) !important;
+    border-color:rgb(116, 38, 206) !important;
 }

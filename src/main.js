@@ -1,4 +1,6 @@
 const data = {
+    tags: ["All", "C++", "JavaScript", "PHP"],
+    tagActive: "All",
     projects: [{
             id: 1,
             name: "RainType",
@@ -42,38 +44,90 @@ const data = {
     ]
 };
 
-const projectCols = [
-    $('<div class="col-md-4 text-center">'),
-    $('<div class="col-md-4 text-center">'),
-    $('<div class="col-md-4 text-center">'),
-];
-const projectTpl = (it) => `
-    <a class="project d-block" href="${it.url}">
-        <img class="d-block mb-3"
-            data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
-            alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;"
-            src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22348%22%20height%3D%22225%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20348%20225%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_176ebdea450%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A17pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_176ebdea450%22%3E%3Crect%20width%3D%22348%22%20height%3D%22225%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22116.68333435058594%22%20y%3D%22120.3%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
-            data-holder-rendered="true">
-        <div>
-            <h4>${it.name}</h4>
-            <p>${it.description}</p>
-            <div>${it.tags.join(", ")}</div>
-        </div>
-    </a>
-`;
+function createProjectNodeTag(id, name) {
+    return `<span id="${id}" class="item mx-1 px-3 py-2 border">${name}</span>`;
+}
 
-$(document).ready(function () {
-    $("#current-year").text(new Date().getFullYear());
+function createProjectNode(it) {
+    return `
+        <a class="project d-block" href="${it.url}">
+            <img class="d-block mb-3"
+                data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;"
+                src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22348%22%20height%3D%22225%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20348%20225%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_176ebdea450%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A17pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_176ebdea450%22%3E%3Crect%20width%3D%22348%22%20height%3D%22225%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22116.68333435058594%22%20y%3D%22120.3%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+                data-holder-rendered="true">
+            <div>
+                <h4>${it.name}</h4>
+                <p>${it.description}</p>
+                <div>${it.tags.join(", ")}</div>
+            </div>
+        </a>
+    `
+}
 
+function initProjectTagList() {
+    const container = $("#tags");
+    for (let i = 0; i < data.tags.length; ++i) {
+        const id = `tag-${i}`;
+        container.append(createProjectNodeTag(id, data.tags[i]));
+        $(`#${id}`).click(function() {
+            data.tagActive = data.tags[i];
+            updateProjectTagList();
+            updateProjectList();
+        });
+    }
+}
+
+function updateProjectTagList() { 
+
+    for (let i = 0; i < data.tags.length; ++i) {
+        const element = $(`#tag-${i}`);
+        if (data.tags[i] == data.tagActive) {
+            element.addClass('active');
+        } else {
+            element.removeClass('active');
+        }
+    }
+}
+
+function updateProjectList() {
+    let projects = [];
+
+    if (data.tagActive === "All") {
+        projects = data.projects;
+    } else {
+        projects = data.projects.filter(function (item) {
+            for (let i = 0; i < item.tags.length; ++i) {
+                if (item.tags[i] === data.tagActive) {
+                    return true;
+                }
+            }
+            return false;
+        });
+    }
+
+    const projectCols = [
+        $('<div class="col-md-4">'),
+        $('<div class="col-md-4">'),
+        $('<div class="col-md-4">'),
+    ];
+    
+    $("#list").text("");
     $("#list").append(projectCols[0]);
     $("#list").append(projectCols[1]);
     $("#list").append(projectCols[2]);
 
-    for (let i = 0; i < data.projects.length; ++i) {
-        projectCols[i % 3].append(
-            projectTpl(data.projects[i])
-        );
+    for (let i = 0; i < projects.length; ++i) {
+        projectCols[i % 3].append(createProjectNode(projects[i]));
     }
+}
+
+$(document).ready(function () {
+    $("#current-year").text(new Date().getFullYear());
+
 
     initSmoothScroll();
+    initProjectTagList();
+    updateProjectTagList();
+    updateProjectList();
 });
