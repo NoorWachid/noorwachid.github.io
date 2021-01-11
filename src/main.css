@@ -11,6 +11,12 @@ a:hover {
     color: rgb(164, 134, 199) !important;
 }
 
+#about {
+    background-image: url("../assets/banner.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
 #tags>span {
     border-radius: 3rem !important;
 }
@@ -51,14 +57,21 @@ section>.name {
     left: 0px;
     width: 100%;
     height: 100%;
-    background-color: rgb(116, 38, 206);
+    background-color: rgb(38, 38, 38);
 
-    opacity: 0.25;
+    opacity: 0.125;
     transition: opacity 0.3s ease-in;
+}
+.z-overlay-image {
+    filter: grayscale(1);
+    transition: filter 0.3s ease-in;
 }
 
 .project:hover .z-overlay-color {
     opacity: 0.0;
+}
+.project:hover .z-overlay-image {
+    filter: grayscale(0);
 }
 
 /* sm */
