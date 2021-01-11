@@ -4,7 +4,7 @@ const data = {
     projects: [{
             id: 1,
             name: "RainType",
-            description: "Very basic typing test written in JavaScript.",
+            description: "Very basic typing test written in JavaScript",
             url: "https://noorwachid.github.io/RainType",
             image: "raintype.png",
             tags: ["JavaScript"]
@@ -12,7 +12,7 @@ const data = {
         {
             id: 2,
             name: "WFileServer",
-            description: "Complete rewrite simplified version of HFS.",
+            description: "Complete rewrite simplified version of HFS",
             url: "https://github.com/NoorWachid/WFileServer",
             image: "wfs.png",
             tags: ["JavaScript", "NodeJS"]
@@ -20,7 +20,7 @@ const data = {
         {
             id: 3,
             name: "FixQuote",
-            description: "Equalize/Differentiate quotation marks.",
+            description: "Equalize/Differentiate quotation marks",
             url: "https://noorwachid.github.io/Jar/FixQuote",
             image: "fixquote.png",
             tags: ["JavaScript"]
@@ -28,7 +28,7 @@ const data = {
         {
             id: 4,
             name: "Sprint",
-            description: "Speed reader: Read article or anything faster than ever.",
+            description: "Speed reader: Read article or anything faster than ever",
             url: "https://noorwachid.github.io/Jar/Sprint",
             image: "sprint.png",
             tags: ["JavaScript"]
@@ -36,7 +36,7 @@ const data = {
         {
             id: 5,
             name: "AnggurEngine",
-            description: "Another 2D C++ Game Engine.",
+            description: "Another 2D C++ Game Engine",
             url: "https://github.com/NoorWachid/Anggur",
             image: "anggur.png",
             tags: ["C++"]
@@ -44,7 +44,7 @@ const data = {
         {
             id: 5,
             name: "SimpleBlog",
-            description: "Super simple blog written in PHP with MySQL.",
+            description: "Super simple blog written in PHP with MySQL",
             url: "https://github.com/NoorWachid/SimpleBlog",
             image: "blank.png",
             tags: ["PHP", "MySQL"]
