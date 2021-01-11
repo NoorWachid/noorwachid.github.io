@@ -83,4 +83,5 @@ section>.name {
 @media (max-width: 349.98px) {
     .w-sm-100 {
         width: 100%;
+        margin-right: 0px;
 }
