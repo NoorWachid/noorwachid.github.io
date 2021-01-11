@@ -40,6 +40,25 @@ section>.name {
     color: rgb(116, 38, 206) !important;
 }
 
+.z-overlay {
+    position: relative;
+}
+.z-overlay-color {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(116, 38, 206);
+
+    opacity: 0.25;
+    transition: opacity 0.3s ease-in;
+}
+
+.project:hover .z-overlay-color {
+    opacity: 0.0;
+}
+
 /* sm */
 @media (max-width: 767.98px) {
     .border-right {

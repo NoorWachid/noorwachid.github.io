@@ -59,7 +59,10 @@ function createProjectNodeTag(id, name) {
 function createProjectNode(it) {
     return `
         <a class="project d-block" href="${it.url}">
-            <img class="d-block mb-3 w-100" src="assets/${it.image}" alt="${it.name}">
+            <div class="z-overlay">
+                <img class="z-overlay-image d-block mb-3 w-100" src="assets/${it.image}" alt="${it.name}">
+                <div class="z-overlay-color"></div>
+            </div>
             <div>
                 <h4>${it.name}</h4>
                 <div class="text-secondary mb-1">${it.description}</div>
