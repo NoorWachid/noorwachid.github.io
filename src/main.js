@@ -5,12 +5,14 @@ const data = {
             id: 1,
             name: "RainType",
             description: "Very basic typing test written in JavaScript.",
+            url: "https://noorwachid.github.io/RainType",
             tags: ["JavaScript"]
         },
         {
             id: 2,
             name: "WFileServer",
             description: "Complete rewrite simplified version of HFS.",
+            url: "https://github.com/NoorWachid/WFileServer",
             tags: ["JavaScript", "NodeJS"]
         },
         {

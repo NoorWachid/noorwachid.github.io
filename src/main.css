@@ -39,3 +39,10 @@ section>.name {
 .text-primary {
     color: rgb(116, 38, 206) !important;
 }
+
+/* sm */
+@media (max-width: 767.98px) {
+    .border-right {
+        border-right-width: 0px !important;
+    }
+}
