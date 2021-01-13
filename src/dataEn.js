@@ -1,4 +1,6 @@
 const dataEn = {
+    type: 'EN',
+    
     ui: {
         cv: "CV",
         cvUrl: "cv.svg",

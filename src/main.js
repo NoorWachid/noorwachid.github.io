@@ -1,4 +1,5 @@
-let data = dataId;
+let data = dataEn;
+
 
 function createProjectNodeTag(id, name) {
     return `<span id="${id}" class="item mx-1 px-3 py-2 border">${name}</span>`;
@@ -30,7 +31,11 @@ function initProjectTagList() {
             updateProjectTagList();
             updateProjectList();
         });
+    
     }
+
+    updateProjectTagList();
+    updateProjectList();
 }
 
 function updateProjectTagList() {
@@ -78,6 +83,37 @@ function updateProjectList() {
 }
 
 function initUiLanguage() {
+
+    const langEn = $("#lang-en");
+    const langId = $("#lang-id");
+    function useLangEn() {
+        langEn.addClass("font-weight-bold");
+        langId.removeClass("font-weight-bold");
+        data = dataEn;
+        updateUiLanguage();
+    }
+    function useLangId() {
+        langId.addClass("font-weight-bold");
+        langEn.removeClass("font-weight-bold");
+        data = dataId;
+        updateUiLanguage();
+    }
+    
+    useLangEn();
+    if (localStorage.hasOwnProperty("lang")) {
+        if (localStorage.getItem("lang") === "id") {
+            data = dataId;
+            useLangId();
+        }
+    }
+
+    langEn.click(useLangEn);
+    langId.click(useLangId);
+
+    updateUiLanguage();
+}
+
+function updateUiLanguage() {
     $("#dev-name").text(data.dev.name);
     $("#dev-description").text(data.dev.description);
     $("#dev-email").text(data.dev.email);
@@ -120,6 +156,4 @@ $(document).ready(function () {
     initUiLanguage();
     initSmoothScroll();
     initProjectTagList();
-    updateProjectTagList();
-    updateProjectList();
 });

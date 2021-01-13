@@ -1,4 +1,6 @@
 const dataId = {
+    type: 'ID',
+    
     ui: {
         cv: "CV",
         cvUrl: "cv_BahasaIndonesia.svg",
