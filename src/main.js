@@ -118,8 +118,6 @@ function updateUiLanguage() {
     $("#dev-description").text(data.dev.description);
     $("#dev-email").text(data.dev.email);
     $("#dev-phone").text(data.dev.phone);
-    $("#ui-cv").text(data.ui.cv);
-    $("#ui-cv-url").attr("href", data.ui.cvUrl);
     $("#ui-projects-h").text(data.ui.projects);
     $("#ui-projects").text(data.ui.projects);
     $("#ui-skills-h").text(data.ui.skills);
