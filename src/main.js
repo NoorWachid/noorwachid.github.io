@@ -117,7 +117,6 @@ function updateUiLanguage() {
     $("#dev-name").text(data.dev.name);
     $("#dev-description").text(data.dev.description);
     $("#dev-email").text(data.dev.email);
-    $("#dev-phone").text(data.dev.phone);
     $("#ui-projects-h").text(data.ui.projects);
     $("#ui-projects").text(data.ui.projects);
     $("#ui-skills-h").text(data.ui.skills);
@@ -127,7 +126,6 @@ function updateUiLanguage() {
     $("#ui-contact").text(data.ui.contact);
     $("#ui-contact-h").text(data.ui.contact);
     $("#ui-email").text(data.ui.email);
-    $("#ui-phone").text(data.ui.phone);
     $("#ui-copyright").text(data.ui.copyright);
 
     let mainSkillHtml = '';

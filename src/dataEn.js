@@ -2,22 +2,18 @@ const dataEn = {
     type: 'EN',
     
     ui: {
-        cv: "CV",
-        cvUrl: "cv.svg",
         projects: "Projects",
         skills: "Skills",
         mainSkills: "Main Skills",
         otherSkills: "Other Skills",
         contact: "Contact",
         email: "E-Mail",
-        phone: "Phone",
         copyright: "All Rights Reserved",
     },
 
     dev: {
         name: "Noor Wachid",
         description: "C++ Programmer and Web Developer",
-        phone: '+62895383900152',
         email: 'noorwachid@yandex.com',
 
         mainSkills: [{

@@ -8,14 +8,12 @@ const dataId = {
         otherSkills: "Kemampuan Lainnya",
         contact: "Kontak",
         email: "Surel",
-        phone: "Telpon",
         copyright: "Hak Cipta Dilindugi",
     },
 
     dev: {
         name: "Noor Wachid",
         description: "C++ Programmer dan Web Developer",
-        phone: '+62895383900152',
         email: 'noorwachid@yandex.com',
 
         mainSkills: [{
