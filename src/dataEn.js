@@ -86,7 +86,7 @@ const dataEn = {
             name: "SimpleBlog",
             description: "Super simple blog written in PHP with MySQL",
             url: "https://github.com/NoorWachid/SimpleBlog",
-            image: "blank.png",
+            image: "simpleblog.png",
             tags: ["PHP", "MySQL"]
         }
     ]

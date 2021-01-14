@@ -86,7 +86,7 @@ const dataId = {
             name: "SimpleBlog",
             description: "Blog super sederhana",
             url: "https://github.com/NoorWachid/SimpleBlog",
-            image: "blank.png",
+            image: "simpleblog.png",
             tags: ["PHP", "MySQL"]
         }
     ]
