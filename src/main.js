@@ -86,26 +86,38 @@ function initUiLanguage() {
 
     const langEn = $("#lang-en");
     const langId = $("#lang-id");
+
     function useLangEn() {
         langEn.addClass("font-weight-bold");
         langId.removeClass("font-weight-bold");
         data = dataEn;
         updateUiLanguage();
+        updateProjectList();
+
+        localStorage.setItem("lang", "en");
     }
+
     function useLangId() {
         langId.addClass("font-weight-bold");
         langEn.removeClass("font-weight-bold");
         data = dataId;
         updateUiLanguage();
+        updateProjectList();
+
+        localStorage.setItem("lang", "id");
     }
     
-    useLangEn();
     if (localStorage.hasOwnProperty("lang")) {
         if (localStorage.getItem("lang") === "id") {
             data = dataId;
             useLangId();
+        } else {
+            useLangEn();
         }
+    } else {
+        useLangEn();
     }
+
 
     langEn.click(useLangEn);
     langId.click(useLangId);
