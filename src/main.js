@@ -1,6 +1,5 @@
 let data = dataEn;
 
-
 function createProjectNodeTag(id, name) {
     return `<span id="${id}" class="item mx-1 px-3 py-2 border">${name}</span>`;
 }
@@ -23,6 +22,7 @@ function createProjectNode(it) {
 
 function initProjectTagList() {
     const container = $("#tags");
+
     for (let i = 0; i < data.tags.length; ++i) {
         const id = `tag-${i}`;
         container.append(createProjectNodeTag(id, data.tags[i]));
@@ -31,7 +31,7 @@ function initProjectTagList() {
             updateProjectTagList();
             updateProjectList();
         });
-    
+
     }
 
     updateProjectTagList();
@@ -39,7 +39,6 @@ function initProjectTagList() {
 }
 
 function updateProjectTagList() {
-
     for (let i = 0; i < data.tags.length; ++i) {
         const element = $(`#tag-${i}`);
         if (data.tags[i] == data.tagActive) {
@@ -83,7 +82,6 @@ function updateProjectList() {
 }
 
 function initUiLanguage() {
-
     const langEn = $("#lang-en");
     const langId = $("#lang-id");
 
@@ -106,7 +104,7 @@ function initUiLanguage() {
 
         localStorage.setItem("lang", "id");
     }
-    
+
     if (localStorage.hasOwnProperty("lang")) {
         if (localStorage.getItem("lang") === "id") {
             data = dataId;
@@ -117,7 +115,6 @@ function initUiLanguage() {
     } else {
         useLangEn();
     }
-
 
     langEn.click(useLangEn);
     langId.click(useLangId);
