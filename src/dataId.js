@@ -45,7 +45,7 @@ const dataId = {
             id: 1,
             name: "RainType",
             description: "Test mengetik dibuat dengan JavaScript",
-            url: "https://noorwachid.github.io/RainType",
+            url: "https://noorwachid.github.io/raintype",
             image: "raintype.png",
             tags: ["JavaScript"]
         },
@@ -53,7 +53,7 @@ const dataId = {
             id: 2,
             name: "WFileServer",
             description: "Penulisan ulang HFS, lebih sederhana dan cepat",
-            url: "https://github.com/NoorWachid/WFileServer",
+            url: "https://github.com/noorwachid/wfileserver",
             image: "wfs.png",
             tags: ["JavaScript", "NodeJS"]
         },
@@ -61,7 +61,7 @@ const dataId = {
             id: 3,
             name: "FixQuote",
             description: "Menyamakan/membedakan tanda petik",
-            url: "https://noorwachid.github.io/Jar/FixQuote",
+            url: "https://noorwachid.github.io/jar/fixquote",
             image: "fixquote.png",
             tags: ["JavaScript"]
         },
@@ -69,7 +69,7 @@ const dataId = {
             id: 4,
             name: "Sprint",
             description: "Baca artikel atau apapun lebih cepat",
-            url: "https://noorwachid.github.io/Jar/Sprint",
+            url: "https://noorwachid.github.io/jar/sprint",
             image: "sprint.png",
             tags: ["JavaScript"]
         },
@@ -77,7 +77,7 @@ const dataId = {
             id: 5,
             name: "AnggurEngine",
             description: "2D Game engine",
-            url: "https://github.com/NoorWachid/Anggur",
+            url: "https://github.com/noorwachid/anggur",
             image: "anggur.png",
             tags: ["C++"]
         },
@@ -85,7 +85,7 @@ const dataId = {
             id: 5,
             name: "SimpleBlog",
             description: "Blog super sederhana",
-            url: "https://github.com/NoorWachid/SimpleBlog",
+            url: "https://github.com/noorwachid/simpleblog",
             image: "simpleblog.png",
             tags: ["PHP", "MySQL"]
         }

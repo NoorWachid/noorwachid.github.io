@@ -45,7 +45,7 @@ const dataEn = {
             id: 1,
             name: "RainType",
             description: "Very basic typing test written in JavaScript",
-            url: "https://noorwachid.github.io/RainType",
+            url: "https://noorwachid.github.io/raintype",
             image: "raintype.png",
             tags: ["JavaScript"]
         },
@@ -53,7 +53,7 @@ const dataEn = {
             id: 2,
             name: "WFileServer",
             description: "Complete rewrite simplified version of HFS",
-            url: "https://github.com/NoorWachid/WFileServer",
+            url: "https://github.com/noorwachid/wfileserver",
             image: "wfs.png",
             tags: ["JavaScript", "NodeJS"]
         },
@@ -61,7 +61,7 @@ const dataEn = {
             id: 3,
             name: "FixQuote",
             description: "Equalize/Differentiate quotation marks",
-            url: "https://noorwachid.github.io/Jar/FixQuote",
+            url: "https://noorwachid.github.io/jar/fixquote",
             image: "fixquote.png",
             tags: ["JavaScript"]
         },
@@ -69,7 +69,7 @@ const dataEn = {
             id: 4,
             name: "Sprint",
             description: "Speed reader: Read article or anything faster than ever",
-            url: "https://noorwachid.github.io/Jar/Sprint",
+            url: "https://noorwachid.github.io/jar/sprint",
             image: "sprint.png",
             tags: ["JavaScript"]
         },
@@ -77,7 +77,7 @@ const dataEn = {
             id: 5,
             name: "AnggurEngine",
             description: "Another 2D C++ Game Engine",
-            url: "https://github.com/NoorWachid/Anggur",
+            url: "https://github.com/noorwachid/anggur",
             image: "anggur.png",
             tags: ["C++"]
         },
@@ -85,7 +85,7 @@ const dataEn = {
             id: 5,
             name: "SimpleBlog",
             description: "Super simple blog written in PHP with MySQL",
-            url: "https://github.com/NoorWachid/SimpleBlog",
+            url: "https://github.com/noorwachid/simpleblog",
             image: "simpleblog.png",
             tags: ["PHP", "MySQL"]
         }
