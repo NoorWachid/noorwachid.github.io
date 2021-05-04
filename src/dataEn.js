@@ -75,8 +75,8 @@ const dataEn = {
         },
         {
             id: 5,
-            name: "AnggurEngine",
-            description: "Another 2D C++ Game Engine",
+            name: "Anggur",
+            description: "2D C++ Rendering Library",
             url: "https://github.com/noorwachid/anggur",
             image: "anggur.png",
             tags: ["C++"]
