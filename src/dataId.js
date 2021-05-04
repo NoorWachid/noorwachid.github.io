@@ -75,8 +75,8 @@ const dataId = {
         },
         {
             id: 5,
-            name: "AnggurEngine",
-            description: "2D Game engine",
+            name: "Anggur",
+            description: "2D rendering library",
             url: "https://github.com/noorwachid/anggur",
             image: "anggur.png",
             tags: ["C++"]
