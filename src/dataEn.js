@@ -50,6 +50,14 @@ const dataEn = {
             tags: ["JavaScript"]
         },
         {
+            id: 7,
+            name: "LeleBr",
+            description: "The best collection of fun on the internet",
+            url: "https://lelebr.com",
+            image: "lelebr.png",
+            tags: ["PHP", "MySQL", "JavaScript"]
+        },
+        {
             id: 2,
             name: "WFileServer",
             description: "Complete rewrite simplified version of HFS",
@@ -82,7 +90,7 @@ const dataEn = {
             tags: ["C++"]
         },
         {
-            id: 5,
+            id: 6,
             name: "SimpleBlog",
             description: "Super simple blog written in PHP with MySQL",
             url: "https://github.com/noorwachid/simpleblog",

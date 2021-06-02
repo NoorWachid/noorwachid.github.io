@@ -50,6 +50,14 @@ const dataId = {
             tags: ["JavaScript"]
         },
         {
+            id: 7,
+            name: "LeleBr",
+            description: "The best collection of fun on the internet",
+            url: "https://lelebr.com",
+            image: "lelebr.png",
+            tags: ["PHP", "MySQL", "JavaScript"]
+        },
+        {
             id: 2,
             name: "WFileServer",
             description: "Penulisan ulang HFS, lebih sederhana dan cepat",
@@ -82,7 +90,7 @@ const dataId = {
             tags: ["C++"]
         },
         {
-            id: 5,
+            id: 6,
             name: "SimpleBlog",
             description: "Blog super sederhana",
             url: "https://github.com/noorwachid/simpleblog",
